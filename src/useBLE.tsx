@@ -85,7 +85,7 @@ export default function useBLE(): BluetoothLowEnergyApi {
     const startStreamingData = async (device: Device) => {
         // console.log("startStreamingData=>", device);
         if (allDevices[0]) {
-            device.monitorCharacteristicForService(allDevices[0]?.id, 'F5 0F 00 04 5F 3B 30 37 33 32', checkDeviceStatus)
+            device.monitorCharacteristicForService("0000180a-0000-1000-8000-00805f9b34fb", '00002a02-0000-1000-8000-00805f9b34fb', checkDeviceStatus)
         } else {
             console.log("No Device Connected!");
         }
@@ -93,17 +93,17 @@ export default function useBLE(): BluetoothLowEnergyApi {
 
     // check device Status
     const checkDeviceStatus = (error: BleError | null, characteristic: Characteristic | null) => {
-        if(error){
+        if (error) {
             console.error(error);
             return;
-        }else if(characteristic?.value){
+        } else if (characteristic?.value) {
             console.error("No Characteristic Found!");
             return;
         }
 
-        const rawData = atob(characteristic.value);
-        console.log("received data", rawData);
-        
+        // const rawData = atob(characteristic.value);
+        // console.log("received data", rawData);
+
     }
 
     return {

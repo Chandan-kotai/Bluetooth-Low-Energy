@@ -5779,6 +5779,11 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   "version" "17.0.2"
 
+"react-native-ble-manager@^10.0.2":
+  "integrity" "sha512-6KlaL/fBvAlk11Yt9zlTnZqfdtGLQCECUaX5Y3E+DZ5BE6LmQ4u7Zvy59bM4TdR2a5UcK+8mNK3XWLjke+QfKw=="
+  "resolved" "https://registry.npmjs.org/react-native-ble-manager/-/react-native-ble-manager-10.0.2.tgz"
+  "version" "10.0.2"
+
 "react-native-ble-plx@^2.0.3":
   "integrity" "sha512-62LRDBPf/03K7sge+qq2ZuF8PWCGB782G+SBrpgNm5fA5Hs3FCY1ExTJZ1G0tB5ZhBPYEXcKRxPLuFegcDFrqA=="
   "resolved" "https://registry.npmjs.org/react-native-ble-plx/-/react-native-ble-plx-2.0.3.tgz"

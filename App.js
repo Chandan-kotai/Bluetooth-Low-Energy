@@ -4,6 +4,7 @@ import React from 'react'
 // import BluetoothManager from 'react-native-bluetooth-classic'
 import BluetoothClassicComp from './src/BluetoothClassicComp'
 import BluetoothPlx from './src/BluetoothPlx'
+import BleManagerV from './src/BleManagerV'
 
 
 const App = ({ navigation }) => {
@@ -133,12 +134,13 @@ const App = ({ navigation }) => {
   // };
 
   // console.log("filter devices=>", devices);
-
+  
 
   return (
     <SafeAreaView style={styles.parent}>
       {/* <BluetoothClassicComp /> */}
-      <BluetoothPlx/>
+      {/* <BluetoothPlx/> */}
+      <BleManagerV/>
     </SafeAreaView>
   )
 }
