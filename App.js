@@ -5,6 +5,7 @@ import React from 'react'
 import BluetoothClassicComp from './src/BluetoothClassicComp'
 import BluetoothPlx from './src/BluetoothPlx'
 import BleManagerV from './src/BleManagerV'
+import ScanScreen from './src/ScanScreen'
 
 
 const App = ({ navigation }) => {
@@ -134,13 +135,14 @@ const App = ({ navigation }) => {
   // };
 
   // console.log("filter devices=>", devices);
-  
+
 
   return (
     <SafeAreaView style={styles.parent}>
       {/* <BluetoothClassicComp /> */}
       {/* <BluetoothPlx/> */}
       <BleManagerV/>
+      {/* <ScanScreen /> */}
     </SafeAreaView>
   )
 }
